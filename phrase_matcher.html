@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width" />
+
+    <title>Phrase CAPTCHA</title>
+
+    <link rel="stylesheet" href="phrase_matcher.css" />
+  </head>
+
+  <body>
+    
+    <div class = "container">
+    <h1>Phrase CAPTCHA</h1>
+    <p>Press the button then say the phrase to test the recognition.</p>
+
+    <button>Start new test</button>
+
+    <div>
+      <p class="phrase">Phrase...</p>
+      <p class="result">Right or wrong?</p>
+      <p class="output">...diagnostic messages</p>
+      <form>
+      <button class="continue-button" id="myButton" style="display: none;" formaction="movement.html">Continue </button>
+    </form>
+    </div>
+    </div>
+
+    <script src="phrase_matcher.js"></script>
+
+    
+      
+    
+  </body>
+</html>

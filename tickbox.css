@@ -1,0 +1,48 @@
+#checkbox {
+	position: absolute;
+	top: 100px;
+	left: 100px;
+}
+
+#newCheckbox {
+	position: absolute;
+	top: 200px;
+	left: 200px;
+}
+
+#newCheckbox2 {
+	position: absolute;
+	top: 300px;
+	left: 300px;
+}
+
+.captcha-container{
+    height:600px;
+    width:500px;
+    background-color: rgb(233, 233, 233);
+    position: relative;
+    padding:5%;
+    margin-left:5%;
+    margin-top:5%;
+    vertical-align : middle;
+    
+}
+
+canvas{
+    position:absolute;
+    border-color: black;
+    background-color: white;
+    border-style: solid;
+    
+    border-width: 1px;
+    border-radius: 20px;
+}
+
+.button{
+    position:absolute;
+    margin-top:70%;
+    margin-left:20%;
+    text-align: center;
+    background-color: rgb(229, 229, 229);
+    
+}

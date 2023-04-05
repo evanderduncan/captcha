@@ -1,0 +1,75 @@
+body, html {
+  margin: 0;
+}
+
+
+body {
+  height: inherit;
+  overflow: hidden;
+}
+
+h1, p {
+  font-family: sans-serif;
+  text-align: center;
+}
+
+div p {
+  padding: 15px;
+  background-color: rgba(73, 99, 177, 0.2);
+}
+
+div {
+  overflow: auto;
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  left: 0;
+}
+
+button {
+  margin: 0 auto;
+  display: block;
+  font-size: 1.1rem;
+  width: 170px;
+  line-height: 2;
+  margin-top: 10px;
+}
+
+.continue-button {
+  display:block;
+  position:relative;
+ 
+  border: solid;
+  border-width: 0.5px;
+  border-color:rgb(8, 8, 8);
+  border-radius:3px;
+}
+
+.continue-button:hover{
+  background-color: rgb(224, 224, 224);
+}
+
+  div {
+    position: static;
+  }
+
+
+.phrase {
+  font-weight: bold;
+}
+
+.output {
+  font-style: italic;
+}
+
+.container{
+  background-color:white;
+  margin-left:25%;
+  margin-right:25%;
+  margin-top: 15%;
+  padding:30px;
+  padding-bottom: 30px;
+  border:solid;
+  border-color:rgb(175,175,175);
+  border-radius:20px;
+}
