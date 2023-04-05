@@ -8,9 +8,10 @@ let redCircle;
 let blueCircleSize = 40;
 let blueCircleAttached = false;
 let detachDelay = 100; // milliseconds
+let counter = 0;
 
 function setup() {
-  var canvas1 = createCanvas(640, 480);
+  var canvas = createCanvas(640, 480);
   video = createCapture(VIDEO);
   video.size(width, height);
 
@@ -36,6 +37,11 @@ function draw() {
   // draw the video to the canvas
   image(video, 0, 0, width, height);
 
+  textSize(32);
+  fill(255);
+  text("Counter: " + counter +"/5", 100, 100);
+  console.log("Counter: " + counter);
+  
   // check if there is at least one pose detected
   if (poses.length > 0) {
     // get the first pose detected
@@ -59,6 +65,7 @@ function draw() {
       // check if the blue circle is overlapping the red circle
       if (dist(blueCircle.x, blueCircle.y, redCircle.x, redCircle.y) < blueCircleSize/2 + 25) {
         setup();
+        counter++;
         return;
       }
     }
